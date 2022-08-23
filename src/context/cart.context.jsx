@@ -50,7 +50,7 @@ export const CartProvider = ({children}) => {
         setCartItems(removeCartItem(cartItems,productToRemove));
     }
     const deleteItemFromCart = (productToRemove) =>{
-        setCartItems(removeCartItem(cartItems,productToRemove));
+        setCartItems(deleteCartItem(cartItems,productToRemove));
     }
     const value = {isCartOpen,setIsCartOpen,cartItems,addItemToCart,cartCount,removeItemFromCart,deleteItemFromCart,cartTotal};
     return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
