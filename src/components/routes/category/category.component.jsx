@@ -10,7 +10,6 @@ const Category = () => {
     useEffect(() => {
         setProducts(categoriesMap[category]);
     },[category,categoriesMap]);
-    console.log(products);
     return (
         <div>
         <h2 className='title'>{category.toUpperCase()}</h2>
